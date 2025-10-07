@@ -1,23 +1,26 @@
 CRUD OPERATION (React + Django)
-
 📘 Overview
 
 This project demonstrates a full-stack CRUD (Create, Read, Update, Delete) application built using React for the frontend and Django REST Framework for the backend.
 Users can easily add, view, update, and delete patient data through an interactive React interface, which communicates seamlessly with a RESTful Django API.
 
 ⚙️ Tech Stack
-
 🔹 Backend
 
 Django
+
 Django REST Framework
+
 SQLite3 (default database)
 
 🔹 Frontend
 
 React.js
+
 Axios — for making API requests
+
 React Toastify — for notifications
+
 Custom CSS — for styling
 
 🧩 Features
@@ -30,7 +33,6 @@ Custom CSS — for styling
 ✅ Simple and clean UI design
 
 🗂️ Folder Structure
-
 CRUD_OPERATION/
 ├── backend/
 │   ├── api/
@@ -54,29 +56,27 @@ CRUD_OPERATION/
         └── App.js
 
 🚀 How to Run the Project
-
- Backend (Django)
- 
- 1. Navigate to backend folder
+🧱 Backend (Django)
+# 1. Navigate to backend folder
 cd backend
 
- 2. Create a virtual environment
+# 2. Create a virtual environment
 python -m venv venv
 
-3. Activate the environment
- Windows
+# 3. Activate the environment
+# Windows
 venv\Scripts\activate
 # Mac/Linux
 source venv/bin/activate
 
-4. Install dependencies
+# 4. Install dependencies
 pip install django djangorestframework
 
-5. Run migrations
+# 5. Run migrations
 python manage.py makemigrations
 python manage.py migrate
 
-6. Start the server
+# 6. Start the server
 python manage.py runserver
 
 
@@ -84,26 +84,19 @@ Backend API will be available at:
 👉 http://127.0.0.1:8000/patient/
 
 💻 Frontend (React)
-
-1. Navigate to frontend folder
+# 1. Navigate to frontend folder
 cd frontend
 
-2. Install dependencies
+# 2. Install dependencies
 npm install
 
-3. Start development server
+# 3. Start development server
 npm run dev
 
 
 Frontend will be available at:
-
 👉 http://localhost:5173/
  (Vite)
-
-or
-
-👉 http://localhost:3000/
- (CRA)
 or
 👉 http://localhost:3000/
  (CRA)

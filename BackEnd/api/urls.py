@@ -5,7 +5,7 @@ from api.views import PatientViewSet
 from api import views
 
 router = routers.DefaultRouter()
-router.register('patient', PatientViewSet)
+router.register(r'patient', PatientViewSet)
 
 
 urlpatterns = [

@@ -6,7 +6,7 @@ import axios from "axios";
 
 export const getpatient = async () => {
   try {
-    const res = await axios.get('http://127.0.0.1:8000/patient/');
+    const res = await axios.get('https://hassan456.pythonanywhere.com/patient/');
     return res.data;
   } catch (error) {
     console.error("Error fetching patient data:", error);
@@ -21,7 +21,7 @@ export const getpatient = async () => {
 
 export const addpatient = async (patient) => {
   try {
-    const res = await axios.post('http://127.0.0.1:8000/patient/', {
+    const res = await axios.post('https://hassan456.pythonanywhere.com/patient/', {
       patient_id: null,
       first_name: patient.first_name.value,
       last_name: patient.last_name.value,
@@ -38,7 +38,7 @@ export const addpatient = async (patient) => {
 
 export const editpatient = async (id, patient) => {
   try {
-    const res = await axios.put(`http://127.0.0.1:8000/patient/${id}/`, {
+    const res = await axios.put(`https://hassan456.pythonanywhere.com/patient/${id}/`, {
       first_name: patient.first_name.value,
       last_name: patient.last_name.value,
       blood: patient.blood.value,
@@ -57,7 +57,7 @@ export const editpatient = async (id, patient) => {
 
 export const deletepatient = async (id) => {
   try {
-    const res = await axios.delete(`http://127.0.0.1:8000/patient/${id}/`);
+    const res = await axios.delete(`https://hassan456.pythonanywhere.com/patient/${id}/`);
     return res.data;
   } catch (error) {
     console.error("Error deleting patient:", error);

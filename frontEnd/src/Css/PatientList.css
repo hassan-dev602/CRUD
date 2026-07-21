@@ -1,0 +1,124 @@
+/* PatientList.css */
+.patient-list-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+}
+
+.patient-list-container h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;            /* ✅ Enable scroll on smaller screens */
+    display: block;
+}
+
+table {
+    width: 100%;
+    min-width: 600px;            /* ✅ Prevent layout break on tablets */
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #3498db;
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    white-space: nowrap;         /* ✅ Prevents header wrapping */
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;         /* ✅ Keeps text tidy */
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Buttons */
+button {
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+button.edit {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+button.delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+button.add-new {
+    display: block;
+    margin: 20px auto;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* ✅ Collapse to Card layout only below 600px */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    table {
+        box-shadow: none;
+        border: none;
+        min-width: 100%;    /* Essential override for small devices */
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+        white-space: normal;  /* ✅ Allow multi-line inside card layout */
+    }
+
+    tbody td:last-child {
+        border-bottom: none;
+    }
+}

@@ -1,0 +1,94 @@
+# =========================
+# Project: React + Django
+# =========================
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# =========================
+# Python / Django Backend
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Django local database and generated files
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Django migrations should usually be committed.
+# Do not ignore api/migrations/*.py files.
+
+# Test, coverage, and cache files
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Python packaging/build files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# React / Vite Frontend
+# =========================
+node_modules/
+frontEnd/node_modules/
+
+# Production build output
+frontEnd/dist/
+frontEnd/dist-ssr/
+
+# Frontend logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Local frontend config files
+*.local
+
+# =========================
+# Editors / OS Files
+# =========================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# IDE/project files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp
+.cache/
